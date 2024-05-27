@@ -74,7 +74,9 @@ const View = ({ char }) => {
 			<div className='randomchar__info'>
 				<p className='randomchar__name'>{name}</p>
 				<p className='randomchar__descr'>
-					{description === '' ? '📌 no description' : description}
+					{description === ''
+						? '📌 no description for this character'
+						: description}
 				</p>
 				<div className='randomchar__btns'>
 					<a href={homepage} className='button button__main'>
