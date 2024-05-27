@@ -16,6 +16,10 @@
 		height: 180px;
 		object-fit: cover;
 	}
+	&__img-notfound{
+		object-fit: contain;
+		width: 200px;
+	}
 	&__info {
 		display: grid;
 		grid-template-rows: minmax(29px, auto) 90px 38px;
