@@ -89,12 +89,12 @@ class CharList extends Component {
 						this.props.onCharSelected(item.id)
 						this.focusOnItem(i)
 					}}
-					onKeyDown={(e) => {
-						if (e.key === ' ' || e.key === "Enter") {
-								this.props.onCharSelected(item.id);
-								this.focusOnItem(i);
+					onKeyDown={e => {
+						if (e.key === ' ' || e.key === 'Enter') {
+							this.props.onCharSelected(item.id)
+							this.focusOnItem(i)
 						}
-				}}
+					}}
 				>
 					<img src={item.thumbnail} alt={item.name} style={imgStyle} />
 					<div className='char__name'>{item.name}</div>
