@@ -8,8 +8,8 @@
   padding: 40px 35px;
   display: grid;
   grid-template-columns: 180px auto;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  -moz-column-gap: 45px;
+       column-gap: 45px;
 }
 .randomchar__img {
   width: 180px;
