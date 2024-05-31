@@ -21,21 +21,21 @@ const App = () => {
 		<div className='app'>
 			<AppHeader />
 			<main>
-				{/* <ErrorBoundary>
+				<ErrorBoundary>
 					<RandomChar />
-				</ErrorBoundary> */}
+				</ErrorBoundary>
 				<div className='char__content'>
-					{/* <ErrorBoundary>
+					<ErrorBoundary>
 						<CharList onCharSelected={onCharSelected} />
 					</ErrorBoundary>
 					<ErrorBoundary>
 						<CharInfo charId={selectedChar} />
-					</ErrorBoundary> */}
-				</div>
-				{/* <img className='bg-decoration' src={decoration} alt='vision' /> */}
-					<ErrorBoundary>
-						<ComicsList/>
 					</ErrorBoundary>
+				</div>
+				<img className='bg-decoration' src={decoration} alt='vision' />
+					{/* <ErrorBoundary>
+						<ComicsList/>
+					</ErrorBoundary> */}
 			</main>
 		</div>
 	)
