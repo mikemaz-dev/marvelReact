@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import useMarvelService from '../../services/MarvelService'
+import { Link } from 'react-router-dom'
 
 import ErrorMessage from '../errorMessage/ErrorMessage'
 import Spinner from '../spinner/spinner'
@@ -82,9 +83,9 @@ const View = ({ char }) => {
 				{comics.map((item, i) => {
 					if (i >= 9) return null
 					return (
-						<li key={i} className='char__comics-item'>
+						<Link to={`/comics/${i}`} key={i} className='char__comics-item'>
 							{item.name}
-						</li>
+						</Link>
 					)
 				})}
 			</ul>
