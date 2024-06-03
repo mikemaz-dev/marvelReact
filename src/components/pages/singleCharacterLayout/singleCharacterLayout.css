@@ -1,0 +1,22 @@
+.single-comic {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 293px 550px auto;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  align-items: start;
+}
+.single-comic__char-img {
+  width: 293px;
+  height: 293px;
+}
+.single-comic__name {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 29px;
+}
+.single-comic__descr {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 25px;
+}/*# sourceMappingURL=singleCharacterLayout.css.map */
