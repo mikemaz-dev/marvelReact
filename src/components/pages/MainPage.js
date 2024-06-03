@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Helmet } from 'react-helmet'
 
 import decoration from '../../resources/img/vision.png'
 import CharInfo from '../charInfo/CharInfo'
@@ -16,6 +17,10 @@ const MainPage = () => {
 	}
 	return (
 		<>
+			<Helmet>
+				<meta name='description' content='Marvel information portal' />
+				<title>Marvel info</title>
+			</Helmet>
 			<ErrorBoundary>
 				<RandomChar />
 			</ErrorBoundary>
